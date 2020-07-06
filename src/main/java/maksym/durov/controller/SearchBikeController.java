@@ -36,14 +36,14 @@ public class SearchBikeController {
                 searchBikeDto.setPrefix(Speedelec.PREFIX);
                 buildElectricBikeSearchDto(searchBikeDto);
             } else {
-                if ("q".equals(input)) {
+                if ("q".equalsIgnoreCase(input)) {
                     break;
                 }
                 cliController.showMessage("Unknown type of bike");
+                continue;
             }
             cliController.showMessage("search results:");
-            List<Bike> bikes = bikeService.findBike(searchBikeDto);//.forEach(System.out::println);
-            System.out.println("bikes size " + bikes.size());
+            bikeService.findBike(searchBikeDto).forEach(System.out::println);
         }
     }
 

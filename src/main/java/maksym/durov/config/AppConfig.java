@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Configuration;
         "maksym.durov.dao",
         "maksym.durov.controller",
         "maksym.durov.service",
-        "maksym.durov.mappers"
+        "maksym.durov.mappers",
+        "maksym.durov.filter"
 })
 public class AppConfig {
 

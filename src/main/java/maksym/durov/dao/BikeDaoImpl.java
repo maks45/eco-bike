@@ -107,6 +107,4 @@ public class BikeDaoImpl implements BikeDao {
         }
         throw new RuntimeException("can't find mapper for class " + bike.getClass().getName());
     }
-
-
 }

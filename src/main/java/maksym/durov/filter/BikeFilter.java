@@ -1,5 +1,8 @@
 package maksym.durov.filter;
 
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import maksym.durov.model.EBike;
 import maksym.durov.model.FoldingBike;
 import maksym.durov.model.SearchBikeDto;
@@ -7,9 +10,6 @@ import maksym.durov.model.Speedelec;
 import maksym.durov.model.abstractbike.Bike;
 import maksym.durov.model.abstractbike.ElectricBike;
 import org.springframework.stereotype.Component;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Component
 public class BikeFilter {

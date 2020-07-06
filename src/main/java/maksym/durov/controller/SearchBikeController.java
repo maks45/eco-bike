@@ -1,11 +1,9 @@
 package maksym.durov.controller;
 
-import java.util.List;
 import maksym.durov.model.EBike;
 import maksym.durov.model.FoldingBike;
 import maksym.durov.model.SearchBikeDto;
 import maksym.durov.model.Speedelec;
-import maksym.durov.model.abstractbike.Bike;
 import maksym.durov.service.BikeService;
 import org.springframework.stereotype.Component;
 
